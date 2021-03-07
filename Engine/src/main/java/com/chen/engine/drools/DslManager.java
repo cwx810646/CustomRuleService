@@ -1,7 +1,8 @@
-package com.chen.engine.drools;
+package com.chen.engine.drools; 
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory; 
+import com.chen.engine.drools.custom.CustomFile;
 
 public class DslManager {
 	private Logger log = LoggerFactory.getLogger(DslManager.class);
@@ -15,7 +16,7 @@ public class DslManager {
 		 return instance;
 	}
     
-    public void generateDsl() {
-		
-	}
+    public String generateDsl(CustomFile file) { 
+	    return null;
+    } 
 }
