@@ -3,9 +3,7 @@ package com.chen.engine.drools;
 import com.alibaba.fastjson.JSON;
 import com.chen.engine.drools.custom.CustomFile;
 
-public class Main {
-	
-	
+public class Main { 
 	public static void main(String[] args) {
 		String in = replaceAlRegex(getRule(), "\n|\r|\\s", "");
 		CustomFile customFile = JSON.parseObject(in, CustomFile.class); 

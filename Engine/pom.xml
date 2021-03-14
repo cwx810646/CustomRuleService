@@ -14,10 +14,15 @@
 	</properties>
 	<dependencies> 
 		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+			<version>7.50.0.Final</version>
+		</dependency> 
+		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.75</version>
-		</dependency> 
+		</dependency>
 		<dependency>
 			<groupId>com.chen</groupId>
 			<artifactId>Common</artifactId>
@@ -25,8 +30,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
+		</dependency> 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
