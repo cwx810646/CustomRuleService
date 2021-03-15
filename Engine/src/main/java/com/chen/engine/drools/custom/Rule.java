@@ -5,8 +5,8 @@ import java.util.List;
 import lombok.Data;
 
 @Data
-public class CustomRule {
+public class Rule {
     private String name; 
-    private List<CustomCondtion> condtions;
-    private List<CustomExecutor> executors;
+    private Node condtion;
+    private List<Executor> executors;
 }

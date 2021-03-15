@@ -1,15 +1,10 @@
 package com.chen.engine.drools;
 
-import com.alibaba.fastjson.JSON;
-import com.chen.engine.drools.custom.CustomFile;
+import com.alibaba.fastjson.JSON; 
 
 public class Main { 
 	public static void main(String[] args) {
-		String in = replaceAlRegex(getRule(), "\n|\r|\\s", "");
-		CustomFile customFile = JSON.parseObject(in, CustomFile.class); 
-		DslManager dslManager = DslManager.getInstance();
-	 	String dsl = dslManager.generateDsl(customFile);
-	    System.out.println(dsl);
+		String in = replaceAlRegex(getRule(), "\n|\r|\\s", "");   
 	}
 
 	public static String replaceAlRegex(String in, String regex, String replaceent) {
